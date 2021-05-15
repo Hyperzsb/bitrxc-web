@@ -1,3 +1,5 @@
-# cloudlibz.github.io
+# 自管委员会技术保障中心网页
 
-[![Gitter](https://badges.gitter.im/cloudlibz/cloudlibz.svg)](https://gitter.im/cloudlibz/cloudlibz?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## 许可
+
+本网页代码来源于[cloudlibz](https://github.com/cloudlibz/cloudlibz.github.io)，以上述代码库的使用许可重新发布。
