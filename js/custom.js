@@ -1,3 +1,6 @@
+/**
+ * Unused js code
+ */
 (function() {
 	'use strict';
 

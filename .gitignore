@@ -1,2 +1,11 @@
+#windows shortcut
+Thumbs.db
+
+#vscode
+.vscode
+
+#generated code
+*.gen.*
+
 node_modules
 npm-debug.log
