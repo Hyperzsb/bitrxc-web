@@ -1,23 +1,19 @@
 *{
 	margin:0;
-	font-family:'Raleway',sans-serif;
 }
 .logo-stripe{
 	text-align: center;
 	background: #9b278a;
 }
 .logo-stripe-2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
-	background: #121c40;
+	background: #9b278a;
 	height: 150px;
 	color: rgb(216, 216, 216);
 }
-
-.logo-stripe-2 h3{
-	padding-top: 50px;
-}
-
-
 
 .row-content {
 	margin: auto;
@@ -497,6 +493,7 @@ footer{
 	align-content:center;
 }
 .txt{
+	text-align: center;
 	padding-top: 2px;
 }
 .row .row-content{
@@ -513,7 +510,7 @@ footer{
 }
 
 body{
-  font-family:"Arial", serif;
+  font-family:'Noto','Yahei',sans-serif;
   background-color:#f4f4f4;
   overflow-x:hidden;
 }
@@ -616,7 +613,8 @@ body{
 	width: 60%;
 	text-align: center;
 }
-.project-title{
+.project >p{
+	text-align: left;
 	
 }
 .project-description{
