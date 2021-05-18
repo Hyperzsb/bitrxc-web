@@ -1,5 +1,6 @@
 #windows shortcut
 Thumbs.db
+.DS_Store
 
 #vscode
 .vscode
