@@ -1,0 +1,215 @@
+:root {
+    --base-color: #212529; /* oc-gary-9 */
+    --base-color-dark: #495057; /* oc-gary-7 */
+    --base-color-darker: #adb5bd; /* oc-gary-5 */
+    --shadow-color-light: #495057; /* oc-gary-7 */
+    --shadow-color: #adb5bd; /* oc-gary-5 */
+    --link-color-lighter: #e9ecef; /* oc-gray-2 */
+    --link-color-light: #ced4da; /* oc-gray-4 */
+    --link-color: #868e96; /* oc-gray-6 */
+    --text-color-lighter: #868e96; /* oc-gary-6 */
+    --text-color-light: #ced4da; /* oc-gary-4 */
+    --text-color: #e9ecef; /* oc-gary-2 */
+    --hint-color: #12b886; /* oc-teal-6 */
+    --warning-color: #fab005; /* oc-yellow-6 */
+    --fatal-color: #fa5252; /* oc-red-6 */
+}
+
+/* Scrollbar style */
+
+::selection {
+    background-color: var(--base-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--base-color-darker);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--base-color);
+}
+
+/* General style class */
+
+.bg-color {
+    background-color: var(--base-color);
+}
+
+.hr-color {
+    background-color: var(--base-color-dark);
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.light-text-color {
+    color: var(--text-color-light);
+}
+
+.lighter-text-color {
+    color: var(--text-color-lighter);
+}
+
+.link-color {
+    color: var(--link-color);
+}
+
+.link-color:hover, .link-color:active {
+    color: var(--link-color-light);
+}
+
+.icon-color {
+    color: var(--link-color);
+}
+
+.icon-color:hover, .icon-color:active {
+    color: var(--link-color-light);
+}
+
+/* Header style class */
+
+.header-bg-color {
+    background-color: rgba(33, 37, 41, .5);
+}
+
+.header-shadow-color {
+    box-shadow: 0 10px 20px var(--shadow-color-light);
+}
+
+.header-button-active-color {
+    color: var(--link-color-lighter);
+}
+
+.header-button-inactive-color {
+    color: var(--link-color);
+}
+
+.header-button-inactive-color:hover {
+    color: var(--link-color-light);
+}
+
+.header-button-inactive-color:hover::after {
+    border-bottom-color: var(--link-color-light);
+}
+
+/* Footer style class */
+
+.footer-shadow-color {
+    box-shadow: 0 -10px 20px var(--shadow-color-light);
+}
+
+.footer-border-color {
+    border-top: var(--base-color-dark) 1px solid;
+}
+
+/* Side toolbar style classes */
+
+.side-toolbar-toggle-color, .side-toolbar-toggle-color:active {
+    box-shadow: 0 0 1rem var(--shadow-color);
+}
+
+.side-toolbar-toggle-color:hover {
+    box-shadow: 0 0 2rem var(--shadow-color);
+}
+
+.side-toolbar-icon-color {
+    color: rgba(233, 236, 239, .7);
+}
+
+.side-toolbar-icon-bg-color {
+    color: var(--base-color);
+    background-color: rgba(233, 236, 239, .7);
+}
+
+/* Overview style class */
+
+.overview-card-pseudo-color:before, .overview-card-pseudo-color:after {
+    background-color: var(--text-color-lighter);
+}
+
+/* About style class */
+
+.about-list-color {
+    background-color: var(--base-color-dark);
+}
+
+/* Markdown style classes */
+
+.markdown-h-color {
+    color: var(--text-color);
+}
+
+.markdown-p-color {
+    color: var(--text-color-light);
+}
+
+.markdown-a-color {
+    color: var(--link-color);
+}
+
+.markdown-a-color:hover, .markdown-a-color:active {
+    color: var(--link-color-light);
+}
+
+.markdown-list-color {
+    color: var(--text-color-light);
+}
+
+.markdown-table-color th, .markdown-table-color tr, .markdown-table-color td {
+    color: var(--text-color-light);
+    border-color: var(--text-color-light);
+}
+
+.markdown-blockquote-color * {
+    color: var(--text-color-lighter);
+}
+
+.markdown-strong-color {
+    color: var(--text-color);
+}
+
+.markdown-color hr {
+    background-color: var(--base-color-dark);
+}
+
+.markdown-color .hint {
+    background-color: var(--hint-color);
+}
+
+.markdown-color .hint * {
+    color: var(--base-color);
+}
+
+.markdown-color .warning {
+    background-color: var(--warning-color);
+}
+
+.markdown-color .warning * {
+    color: var(--base-color);
+}
+
+.markdown-color .fatal {
+    background-color: var(--fatal-color);
+}
+
+.markdown-color .fatal * {
+    color: var(--base-color);
+}
+
+.footnotes-list {
+    color: var(--text-color-light);
+}
+
+.sidebar-header-color {
+    color: var(--text-color);
+    background-color: var(--base-color-dark);
+}
+
+.sidebar-header-color .close {
+    color: var(--text-color) !important;
+}
+
+.sidebar-body-color {
+    background-color: var(--base-color);
+}

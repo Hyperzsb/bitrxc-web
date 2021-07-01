@@ -1,0 +1,203 @@
+:root {
+    --base-color: #f8f9fa; /* oc-gary-0 */
+    --base-color-dark: #e9ecef; /* oc-gary-2 */
+    --base-color-darker: #ced4da; /* oc-gary-4 */
+    --shadow-color-light: #dee2e6; /* oc-gary-3 */
+    --shadow-color: #adb5bd; /* oc-gary-5 */
+    --link-color-lighter: #cc5de8; /* oc-teal-5 */
+    --link-color-light: #ae3ec9; /* oc-teal-7 */
+    --link-color: #862e9c; /* oc-teal-9 */
+    --text-color-lighter: #adb5bd; /* oc-gary-5 */
+    --text-color-light: #495057; /* oc-gary-7 */
+    --text-color: #212529; /* oc-gary-9 */
+    --hint-color: #63e6be; /* oc-teal-3 */
+    --warning-color: #ffe066; /* oc-yellow-3 */
+    --fatal-color: #ffa8a8; /* oc-red-3 */
+}
+
+/* Scrollbar style */
+
+::selection {
+    background-color: var(--base-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--base-color-darker);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--base-color);
+}
+
+/* General style classes */
+
+.bg-color {
+    background-color: var(--base-color);
+}
+
+.hr-color {
+    background-color: var(--base-color-dark);
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.light-text-color {
+    color: var(--text-color-light);
+}
+
+.lighter-text-color {
+    color: var(--text-color-lighter);
+}
+
+.link-color {
+    color: var(--link-color);
+}
+
+.link-color:hover, .link-color:active {
+    color: var(--link-color-light);
+}
+
+.icon-color {
+    color: var(--link-color);
+}
+
+.icon-color:hover, .icon-color:active {
+    color: var(--link-color-light);
+}
+
+/* Header style classes */
+
+.header-bg-color {
+    background-color: rgba(248, 249, 250, .5);
+}
+
+.header-shadow-color {
+    box-shadow: 0 10px 20px var(--shadow-color-light);
+}
+
+.header-button-active-color {
+    color: var(--link-color-lighter);
+}
+
+.header-button-inactive-color {
+    color: var(--link-color);
+}
+
+.header-button-inactive-color:hover {
+    color: var(--link-color-light);
+}
+
+.header-button-inactive-color:hover::after {
+    border-bottom-color: var(--link-color-light);
+}
+
+/* Footer style classes */
+
+.footer-shadow-color {
+    box-shadow: 0 -10px 20px var(--shadow-color-light);
+}
+
+.footer-border-color {
+    border-top: var(--base-color-dark) 1px solid;
+}
+
+/* Side toolbar style classes */
+
+.side-toolbar-toggle-color, .side-toolbar-toggle-color:active {
+    box-shadow: 0 0 1rem var(--shadow-color);
+}
+
+.side-toolbar-toggle-color:hover {
+    box-shadow: 0 0 2rem var(--shadow-color);
+}
+
+.side-toolbar-icon-color {
+    color: rgba(134, 46, 156, 0.7);
+}
+
+.side-toolbar-icon-bg-color {
+    color: var(--base-color);
+    background-color: rgba(134, 46, 156, 0.7);
+}
+
+/* Overview style classes */
+
+.overview-card-pseudo-color:before, .overview-card-pseudo-color:after {
+    background-color: var(--text-color-lighter);
+}
+
+/* About style classes */
+
+.about-list-color {
+    background-color: var(--base-color-dark);
+}
+
+/* Markdown style classes */
+
+.markdown-h-color {
+    color: var(--text-color);
+}
+
+.markdown-p-color {
+    color: var(--text-color-light);
+}
+
+.markdown-a-color {
+    color: var(--link-color);
+}
+
+.markdown-a-color:hover, .markdown-a-color:active {
+    color: var(--link-color-light);
+}
+
+.markdown-list-color {
+    color: var(--text-color-light);
+}
+
+.markdown-table-color th, .markdown-table-color tr, .markdown-table-color td {
+    color: var(--text-color-light);
+    border-color: var(--text-color-light);
+}
+
+.markdown-blockquote-color * {
+    color: var(--text-color-lighter);
+}
+
+.markdown-strong-color {
+    color: var(--text-color);
+}
+
+.markdown-color hr {
+    background-color: var(--base-color-dark);
+}
+
+.markdown-color .hint {
+    background-color: var(--hint-color);
+}
+
+.markdown-color .warning {
+    background-color: var(--warning-color);
+}
+
+.markdown-color .fatal {
+    background-color: var(--fatal-color);
+}
+
+.footnotes-list {
+    color: var(--text-color-light);
+}
+
+.sidebar-header-color {
+    color: var(--text-color);
+    background-color: var(--base-color-dark);
+}
+
+.sidebar-header-color .close {
+    color: var(--text-color) !important;
+}
+
+.sidebar-bg-color {
+    background-color: var(--base-color);
+}

@@ -1,0 +1,266 @@
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// General style setting
+
+* {
+  font-family: source-han-serif-sc, serif;
+  font-style: normal;
+}
+
+// General style class
+
+.transition-25 {
+  transition: 0.25s;
+}
+
+// Custom Scrollbar classes
+
+::selection {
+  // background-color: #ced4da;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  // background-color: #ced4da;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  // background-color: #f8f9fa;
+}
+
+
+// Markdown classes
+
+.markdown-h1 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin: 2rem 0;
+
+  @include mobile {
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+  }
+}
+
+.markdown-h2 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 3.3rem;
+  margin: 1.7rem 0;
+
+  @include mobile {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+  }
+}
+
+.markdown-h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 3.3rem;
+  margin: 1.4rem 0;
+
+  @include mobile {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}
+
+.markdown-h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3.1rem;
+  margin: 1.1rem 0;
+
+  @include mobile {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+  }
+}
+
+.markdown-h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+  margin: 0.8rem 0;
+
+  @include mobile {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
+
+.markdown-h6 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  margin: 0.5rem 0;
+
+  @include mobile {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+}
+
+.markdown-p {
+  margin: 0.5rem 0;
+}
+
+.markdown-a {
+  transition: 0.25s;
+  text-decoration: underline;
+
+  &:after {
+    padding-left: 5px;
+    content: '⇗';
+    font-size: 70%;
+    vertical-align: super;
+  }
+}
+
+.markdown-ul {
+  margin: 0.7rem 0;
+  padding-inline-start: 40px;
+
+  @include mobile {
+    padding-inline-start: 15px;
+  }
+}
+
+.markdown-ol {
+  margin: 0.7rem 0;
+  padding-inline-start: 40px;
+
+  @include mobile {
+    padding-inline-start: 15px;
+  }
+}
+
+.markdown-li {
+  margin: 0.3rem 0;
+}
+
+.markdown-hr {
+  margin: 3rem 0 2.5rem;
+}
+
+.markdown-img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.markdown-table {
+  width: 100%;
+  margin: 1.5rem 0;
+  text-align: center;
+  vertical-align: middle;
+
+  th {
+    padding: 10px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+  }
+
+  tr, td {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+  }
+}
+
+.markdown-blockquote {
+  display: block;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+  border-left: #adb5bd 5px solid;
+}
+
+.markdown-anchor {
+  font-size: 70%;
+  transition: 0.25s;
+  vertical-align: super;
+}
+
+// Markdown code style setting
+
+.markdown-block-code {
+  margin: 1.5rem 0;
+  border-radius: 7px;
+
+  & code.hljs {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+pre.hljs {
+  padding: 0;
+}
+
+code {
+  padding: 0 0.2rem;
+  margin: 0 0.2rem;
+}
+
+code.hljs {
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 7px;
+}
+
+// Other classes predefined by markdown-it
+
+// Footnote
+.markdown-container .footnotes-sep {
+  margin: 3rem 0 2.5rem;
+}
+
+// Custom containers
+.markdown-container .hint, .warning, .fatal {
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px #868e96;
+
+  p {
+    margin: 0;
+  }
+}
+
+// Toc lists
+#toc-container {
+  & .markdown-ul, & .markdown-ol {
+    margin: 0.7rem 0 0.7rem 0;
+    padding-inline-start: 20px;
+  }
+
+  & .markdown-a {
+    text-decoration: none;
+
+    &:after {
+      content: '';
+    }
+  }
+}
+
+// Bootstrap style override
+
+// Define your variable overrides here
+$enable-shadows: true;
+$enable-gradients: true;
+
+// Include Bootstrap and BootstrapVue SCSS files
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/bootstrap-vue/src/index';
