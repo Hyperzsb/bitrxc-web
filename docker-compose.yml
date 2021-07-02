@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  server:
+    build: .
+    container_name: web
+    ports:
+      - target: ${SERVER_TARGET_PORT}
+        published: ${SERVER_PUBLISHED_PORT}
