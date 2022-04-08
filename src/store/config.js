@@ -5,7 +5,7 @@ const config = {
             zh: '睿信社区技术保障中心'
         },
         logo: require('@/assets/img/logo.png'),
-        github: 'https://github.com/Hyperzsb/bitrxc-web',
+        github: 'https://github.com/bitrxc',
         version: '',
         description: {
             main: {
@@ -78,19 +78,19 @@ const config = {
                     en: 'Server',
                     zh: '服务端'
                 },
-                href: 'https://vuejs.org/'
+                href: 'https://github.com/bitrxc/bitrxc-server'
             }, {
                 name: {
                     en: 'Admin Web Client',
                     zh: '管理员中台'
                 },
-                href: 'https://bootstrap-vue.org/'
+                href: 'https://github.com/bitrxc/bitrxc-admin-client'
             }, {
                 name: {
                     en: 'User Mini Program',
                     zh: '用户小程序'
                 },
-                href: 'https://github.com/markdown-it/markdown-it/'
+                href: 'https://github.com/bitrxc/bitrxc-user-client'
             }]
         },
         linkListRight: {
@@ -109,7 +109,7 @@ const config = {
                     en: 'Contact Us',
                     zh: '联系我们'
                 },
-                href: 'mailto:hyperzsb@outlook.com'
+                href: 'mailto:bitrxctsc@outlook.com'
             }]
         },
         recordText: '京ICP备20005820号-3'
